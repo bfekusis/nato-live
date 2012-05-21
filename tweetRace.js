@@ -9,7 +9,7 @@ tweetRace.start = _.throttle(function(){
     $('th.first').text(tweets[0] + ' tweets');
     $('th.second').text(tweets[1] + ' tweets');
     tweetRace.getTweets(tweets[0] + ' OR ' + tweets[1], tweets[2]);
-}, 2000);
+}, 30000);
     
 tweetRace.params = {
     rpp: 100,
