@@ -52,7 +52,7 @@
         var tweets = [
             'nonato',          	// First term
             'nato',          	// Second term
-            '39,-98,1500mi'     // search location and radius (lat,lon,radius)
+            '41.8781136,-87.6297982,50mi'     // search location and radius (lat,lon,radius)
         ];
 
         // Make a new map in the #map element
@@ -60,9 +60,9 @@
             // Specify the MapBox API url
             api: 'http://a.tiles.mapbox.com/v3/mapbox.map-hv50mbs9.jsonp',
             center: {
-                lat: 40,        // Intial center point and zoom level.
-                lon: -80,       // To find coordinates and zoom levels, 
-                zoom: 4         // try: http://www.getlatlon.com
+                lat: 41.8781136,        // Intial center point and zoom level.
+                lon: -87.6297982,       // To find coordinates and zoom levels, 
+                zoom: 14         // try: http://www.getlatlon.com
             },
             zoomRange: [2, 15], // Limit zooming on the map to these levels
             features: [         // Map features (see readme.md)
