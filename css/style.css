@@ -108,7 +108,7 @@ body > div {
 	top: 50px;
 	right: 0px;
 	bottom: 0px;
-	padding: 0 20px;
+	padding: 20px;
 	width: 480px;
     background: rgb(255,255,255); /* old IE */
     background: rgba(255,255,255,.9);
