@@ -40,11 +40,11 @@ tweetRace.getTweets = function(query, geo) {
 // Extract relevant data from tweets
 tweetRace.processTweet = function(d) {
     _.each(d.results, function(element, index) {
-        console.log(element);
         if (element.geo && element.geo.type === 'Point') {
+            console.log(element);
             var lat = element.geo.coordinates[0], // Twitter seems to reverse the
                 lon = element.geo.coordinates[1]; // order of geojson coordinates
-                
+        /*
         } else if (element.location && element.location.indexOf(': ') > 0) {
             var coords = element.location.split(': ')[1],
                 $lat = coords.split(',')[0] || 0,
@@ -54,6 +54,7 @@ tweetRace.processTweet = function(d) {
                 var lon = parseFloat($lon),
                     lat = parseFloat($lat);
             }
+        */
         }
         
         if (lat && lon) {
