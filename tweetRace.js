@@ -40,6 +40,7 @@ tweetRace.getTweets = function(query, geo) {
 // Extract relevant data from tweets
 tweetRace.processTweet = function(d) {
     _.each(d.results, function(element, index) {
+        console.log(element);
         if (element.geo && element.geo.type === 'Point') {
             var lat = element.geo.coordinates[0], // Twitter seems to reverse the
                 lon = element.geo.coordinates[1]; // order of geojson coordinates
